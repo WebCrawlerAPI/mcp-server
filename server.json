@@ -1,0 +1,24 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.webcrawlerapi/mcp-server",
+  "title": "WebCrawlerAPI",
+  "description": "Turn any web page into clean Markdown for your AI assistant. OAuth sign-in, no API key.",
+  "version": "0.1.0",
+  "websiteUrl": "https://webcrawlerapi.com/docs/sdk/remote-mcp",
+  "repository": {
+    "url": "https://github.com/WebCrawlerAPI/mcp-server",
+    "source": "github"
+  },
+  "icons": [
+    {
+      "src": "https://webcrawlerapi.com/mcp-icon.svg",
+      "mimeType": "image/svg+xml"
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.webcrawlerapi.com/mcp"
+    }
+  ]
+}

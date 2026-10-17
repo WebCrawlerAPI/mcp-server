@@ -1,0 +1,52 @@
+{
+  "name": "mcp-server",
+  "version": "0.1.0",
+  "private": true,
+  "description": "WebCrawlerAPI remote MCP server (Streamable HTTP, OAuth resource server)",
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "scraping",
+    "web-scraping",
+    "markdown",
+    "webcrawlerapi"
+  ],
+  "homepage": "https://webcrawlerapi.com/docs/sdk/remote-mcp",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebCrawlerAPI/mcp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/WebCrawlerAPI/mcp-server/issues"
+  },
+  "author": "WebCrawlerAPI <support@webcrawlerapi.com>",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "packageManager": "pnpm@10.26.1",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc -p tsconfig.build.json",
+    "start": "node dist/index.js",
+    "test": "vitest run",
+    "lint": "biome check .",
+    "format": "biome format --write ."
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "express": "^5.3.0",
+    "express-rate-limit": "^8.7.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.5.15",
+    "@types/express": "^5.0.6",
+    "@types/node": "^22.20.5",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "vitest": "^5.0.5"
+  }
+}
